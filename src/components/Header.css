@@ -1,0 +1,104 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  height: 64px; 
+  padding: 0 3rem;
+
+  background-color: #0f172a;
+  color: white;
+
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* ---------- Logo ---------- */
+.logo {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.logo img {
+  height: 36px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+}
+
+/* ---------- Navigation ---------- */
+.navLink nav ul {
+  display: flex;
+  flex-direction: row;   /* explicit horizontal layout */
+  align-items: center;
+  gap: 2rem;
+
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navLink a {
+  padding: 0.4rem 0.75rem;
+  border-radius: 6px;
+
+  font-weight: 500;
+  color: whitesmoke;
+  text-decoration: none;
+
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* Hover effect */
+.navLink a:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Active (current page) */
+.navLink a.active {
+  background-color: white;
+  color: black;
+}
+
+
+/* ---------- User Actions ---------- */
+.userActions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.loginBtn,
+.signupBtn {
+  padding: 0.4rem 1.2rem;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+  line-height: 1;
+}
+
+/* Login */
+.loginBtn {
+  background-color: transparent;
+  color: white;
+  border: 1px solid #38bdf8;
+}
+
+.loginBtn:hover {
+  background-color: #38bdf8;
+  color: #0f172a;
+}
+
+/* Sign up */
+.signupBtn {
+  background-color: #38bdf8;
+  color: #0f172a;
+}
+
+.signupBtn:hover {
+  background-color: #0ea5e9;
+}

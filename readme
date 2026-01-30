@@ -1,0 +1,1 @@
+Using react 18 instead of react 19 (the newest version) since react 19 is suill experimental. Some modules do not support it.
