@@ -4,29 +4,24 @@ import './HowItWorks.css';
 export default function HowItWorks() {
   const steps = [
     {
-      title: 'Connect Donor',
-      desc: 'Donor EV plugs securely into EV Buddy charger.',
+      title: 'Connect Vehicles',
+      desc: 'Cables plugged securely into charging ports of stranded vehicle and rescue vehicle',
       icon: '🔌',
     },
     {
-      title: 'Power Transfer',
-      desc: 'Donor EV starts charging EV Buddy charging port.',
+      title: 'Start Power Transfer',
+      desc: 'Connection established, Press Start Charging button.',
       icon: '🔄',
     },
     {
-      title: 'Vehicle Ready',
-      desc: 'Energy flows at ~1 mile gain per minute.',
+      title: 'Energy Flows',
+      desc: 'Power transfer from the donor to recipient at 1 mile per minute.',
       icon: '📄',
     },
     {
-      title: 'Vehicle Ready',
-      desc: 'Recipient EV battery gains sufficient range.',
+      title: 'Back on the Road ',
+      desc: 'Unplug and drive away',
       icon: '🚗',
-    },
-    {
-      title: 'Back on Road',
-      desc: 'Unplug and drive away — no tow truck needed!',
-      icon: '🛣️',
     },
   ];
 

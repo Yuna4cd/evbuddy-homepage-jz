@@ -8,11 +8,7 @@ export default function PilotPlan() {
       desc: 'Pilot Program Launching Soon',
     },
     {
-      title: 'Bay Area',
-      desc: 'Pilot Program Launching Soon',
-    },
-    {
-      title: 'Oregon Markets',
+      title: 'Westcoast',
       desc: 'Pilot Program Launching Soon',
     },
   ];
@@ -20,7 +16,7 @@ export default function PilotPlan() {
   return (
     <section className="pilot-section">
       <div className="pilot-container">
-        <h2 className="pilot-title">Pilots Program Planned to Launch</h2>
+        <h2 className="pilot-title">Launch This Year</h2>
 
         <p className="pilot-subtitle">
           Full-Coverage EV Charging Across North America. We are expanding

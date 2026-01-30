@@ -28,7 +28,7 @@ export default function VideoShowcase() {
   return (
     <section className="video-section">
       <div className="video-container">
-        <h2 className="video-title">See EV Buddy in Action</h2>
+        <h2 className="video-title">See EVChargeShare in Action</h2>
         <p className="video-subtitle">
           Watch real-time, V2V DC fast charging in action and see how easy
           it is to get back on the road in minutes.
