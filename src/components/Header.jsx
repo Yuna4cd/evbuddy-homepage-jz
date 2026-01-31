@@ -19,6 +19,7 @@ export default function Header() {
                         <li><NavLink to="/" end>Home</NavLink></li>
                         <li><NavLink to="/services">Services</NavLink></li>
                         <li><NavLink to="/investments">Investments</NavLink></li>
+                        <li><NavLink to="/news">News</NavLink></li>
                         <li><NavLink to="/rentals">Rentals</NavLink></li>
                     </ul>
                 </nav>
