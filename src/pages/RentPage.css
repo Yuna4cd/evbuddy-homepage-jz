@@ -1,0 +1,87 @@
+/* PAGE BACKGROUND */
+.rent-page {
+  min-height: 100vh;
+  background:
+    radial-gradient(
+      circle at top,
+      #0b1a2d 0%,
+      #050b14 55%,
+      #02060c 100%
+    );
+  color: #ffffff;
+  padding: 5rem 1.5rem;
+}
+
+/* HERO */
+.rent-hero {
+  max-width: 900px;
+  margin: 0 auto 5rem;
+  text-align: center;
+}
+
+.rent-hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.rent-tagline {
+  max-width: 720px;
+  margin: 0 auto 2rem;
+  color: #9fb3c8;
+  line-height: 1.6;
+}
+
+/* PRIMARY BUTTON */
+.primary-btn {
+  background-color: #38bdf8;
+  color: #020617;
+  border: none;
+  padding: 0.85rem 1.75rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.primary-btn:hover {
+  filter: brightness(1.05);
+}
+
+/* SECTIONS */
+.rent-section {
+  max-width: 1200px;
+  margin: 0 auto 5rem;
+}
+
+.rent-section h2 {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  font-size: 1.9rem;
+}
+
+/* CARD GRID */
+.rent-steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.75rem;
+}
+
+/* GLASS CARD */
+.rent-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 18px;
+  padding: 2rem;
+  backdrop-filter: blur(10px);
+}
+
+.rent-card h3 {
+  margin-bottom: 0.75rem;
+  font-size: 1.15rem;
+}
+
+.rent-card p {
+  color: #a7b8cc;
+  line-height: 1.5;
+}
