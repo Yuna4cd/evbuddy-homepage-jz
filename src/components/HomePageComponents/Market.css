@@ -1,10 +1,19 @@
-/* components/Market.css */
-
+/* =========================
+   Section
+========================== */
 .market-section {
   padding: 140px 0;
-  background: linear-gradient(180deg, #0b1422 0%, #0e1a2a 100%);
+
+  background: linear-gradient(
+    180deg,
+    var(--color-bg-primary) 0%,
+    var(--color-bg-surface) 100%
+  );
 }
 
+/* =========================
+   Layout
+========================== */
 .market-container {
   max-width: 1300px;
   margin: 0 auto;
@@ -18,11 +27,13 @@
   align-items: center;
 }
 
-/* Left column */
+/* =========================
+   Left Column
+========================== */
 .market-title {
   font-size: 3rem;
   font-weight: 700;
-  color: #ffffff;
+  color: var(--color-text-primary);
   line-height: 1.15;
   margin-bottom: 28px;
 }
@@ -31,7 +42,7 @@
   max-width: 520px;
   font-size: 1rem;
   line-height: 1.7;
-  color: #9aa4b2;
+  color: var(--color-text-secondary);
   margin-bottom: 36px;
 }
 
@@ -49,25 +60,30 @@
   align-items: center;
   gap: 12px;
   font-size: 0.95rem;
-  color: #cfd6e1;
+  color: var(--color-text-secondary);
 }
 
+/* Check icon */
 .check {
   width: 10px;
   height: 10px;
   border-radius: 3px;
-  background: #22d3a6;
+  background-color: var(--color-success);
 }
 
-/* CTA */
+/* =========================
+   CTA
+========================== */
 .market-cta {
-  background: #22d3a6;
-  color: #0b1422;
+  background-color: var(--color-success);
+  color: var(--color-bg-primary);
   border: none;
+
   padding: 14px 26px;
   font-size: 0.95rem;
   font-weight: 600;
   border-radius: 8px;
+
   cursor: pointer;
 }
 
@@ -78,10 +94,12 @@
 .market-footnote {
   margin-top: 14px;
   font-size: 0.8rem;
-  color: #7f8a9a;
+  color: var(--color-text-secondary);
 }
 
-/* Right column stats */
+/* =========================
+   Right Column (Stats)
+========================== */
 .market-right {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -89,26 +107,29 @@
 }
 
 .market-stat {
-  background: #1a2230;
+  background-color: var(--color-bg-card);
   border-radius: 14px;
   padding: 28px 24px;
   text-align: center;
+
   box-shadow: 0 20px 45px rgba(0, 0, 0, 0.35);
 }
 
 .market-stat-value {
   font-size: 2rem;
   font-weight: 700;
-  color: #22d3a6;
+  color: var(--color-success);
   margin-bottom: 6px;
 }
 
 .market-stat-label {
   font-size: 0.85rem;
-  color: #b7c0cd;
+  color: var(--color-text-secondary);
 }
 
-/* Responsive */
+/* =========================
+   Responsive
+========================== */
 @media (max-width: 1000px) {
   .market-content {
     grid-template-columns: 1fr;

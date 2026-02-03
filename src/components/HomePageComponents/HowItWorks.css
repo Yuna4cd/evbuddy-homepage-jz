@@ -1,10 +1,14 @@
-/* components/HowItWorks.css */
-
+/* =========================
+   Section
+========================== */
 .how-section {
   padding: 120px 0;
-  background: #141c27;
+  background-color: var(--color-bg-surface);
 }
 
+/* =========================
+   Layout
+========================== */
 .how-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -12,24 +16,29 @@
   text-align: center;
 }
 
+/* =========================
+   Headings
+========================== */
 .how-title {
   font-size: 2.6rem;
   font-weight: 700;
-  color: #ffffff;
+  color: var(--color-text-primary);
   margin-bottom: 12px;
 }
 
 .how-subtitle {
   font-size: 1.05rem;
-  color: #9aa4b2;
+  color: var(--color-text-secondary);
   margin-bottom: 80px;
 }
 
+/* =========================
+   Steps Layout
+========================== */
 .how-steps {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  /* flex-wrap: wrap; */
   gap: 30px;
 }
 
@@ -38,6 +47,9 @@
   align-items: center;
 }
 
+/* =========================
+   Step Card
+========================== */
 .how-step {
   width: 180px;
   text-align: center;
@@ -48,34 +60,47 @@
   height: 64px;
   margin: 0 auto 18px;
   border-radius: 50%;
-  background: linear-gradient(135deg, #4dd6a7, #3fb5ff);
+
+  /* Accent gradient stays component-scoped */
+  background: linear-gradient(
+    135deg,
+    var(--color-success),
+    var(--color-accent)
+  );
+
   display: flex;
   align-items: center;
   justify-content: center;
+
   font-size: 26px;
-  color: #ffffff;
+  color: var(--color-bg-primary);
 }
 
 .how-step h4 {
   font-size: 1.05rem;
   font-weight: 600;
-  color: #ffffff;
+  color: var(--color-text-primary);
   margin-bottom: 8px;
 }
 
 .how-step p {
   font-size: 0.9rem;
-  color: #b7c0cd;
+  color: var(--color-text-secondary);
   line-height: 1.5;
 }
 
+/* =========================
+   Arrow
+========================== */
 .how-arrow {
   font-size: 26px;
-  color: #6b7280;
+  color: var(--color-border-default);
   margin: 0 18px;
 }
 
-/* Mobile */
+/* =========================
+   Mobile
+========================== */
 @media (max-width: 900px) {
   .how-steps {
     flex-direction: column;

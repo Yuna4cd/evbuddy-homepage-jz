@@ -1,0 +1,8 @@
+.news-page {
+  min-height: 100vh;
+  background: linear-gradient(
+    180deg,
+    var(--color-bg-primary),
+    var(--color-bg-surface)
+  );
+}

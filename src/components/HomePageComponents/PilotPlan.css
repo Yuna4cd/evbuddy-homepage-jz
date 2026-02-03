@@ -1,10 +1,14 @@
-/* components/PilotPlan.css */
-
+/* =========================
+   Section
+========================== */
 .pilot-section {
   padding: 120px 0;
-  background: linear-gradient(180deg, #0d1623 0%, #0f1b29 100%);
+  background-color: var(--color-bg-surface);
 }
 
+/* =========================
+   Layout
+========================== */
 .pilot-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -12,10 +16,13 @@
   text-align: center;
 }
 
+/* =========================
+   Headings
+========================== */
 .pilot-title {
   font-size: 2.6rem;
   font-weight: 700;
-  color: #ffffff;
+  color: var(--color-text-primary);
   margin-bottom: 18px;
 }
 
@@ -24,57 +31,82 @@
   margin: 0 auto 70px;
   font-size: 1.05rem;
   line-height: 1.7;
-  color: #9aa4b2;
+  color: var(--color-text-secondary);
 }
 
-/* Grid */
+/* =========================
+   Grid
+========================== */
 .pilot-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr); /* matches screenshot */
   gap: 32px;
   margin-bottom: 60px;
+  justify-content: center;
 }
 
+/* =========================
+   Card
+========================== */
 .pilot-card {
-  background: #1a2230;
+  background-color: var(--color-bg-card);
   border-radius: 14px;
   padding: 36px 24px;
+
   box-shadow: 0 16px 40px rgba(0, 0, 0, 0.35);
 }
 
+/* =========================
+   Icon
+========================== */
 .pilot-icon {
   width: 56px;
   height: 56px;
   margin: 0 auto 18px;
   border-radius: 50%;
-  background: linear-gradient(135deg, #4dd6a7, #3fb5ff);
+
+  background: linear-gradient(
+    135deg,
+    var(--color-success),
+    var(--color-accent)
+  );
+
   display: flex;
   align-items: center;
   justify-content: center;
+
   font-size: 26px;
+  color: var(--color-bg-primary);
 }
 
+/* =========================
+   Card Text
+========================== */
 .pilot-card h4 {
   font-size: 1.1rem;
   font-weight: 600;
-  color: #ffffff;
+  color: var(--color-text-primary);
   margin-bottom: 8px;
 }
 
 .pilot-card p {
   font-size: 0.9rem;
-  color: #b7c0cd;
+  color: var(--color-text-secondary);
 }
 
-/* Footer text */
+/* =========================
+   Footer Text
+========================== */
 .pilot-footer {
   max-width: 720px;
   margin: 0 auto;
   font-size: 0.9rem;
-  color: #8f9bab;
+  color: var(--color-text-secondary);
 }
 
-/* Responsive */
+/* =========================
+   Responsive
+========================== */
 @media (max-width: 900px) {
   .pilot-grid {
     grid-template-columns: 1fr;

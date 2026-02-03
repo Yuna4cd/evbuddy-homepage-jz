@@ -5,7 +5,7 @@ import RentSections from "../components/RentPageComponenets/RentSections";
 
 export default function RentPage() {
   return (
-    <div className='home'>
+    <div className='rent-page'>
       <RentHeader />
       <RentSections />
     </div>

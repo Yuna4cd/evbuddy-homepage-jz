@@ -1,22 +1,31 @@
-/* components/Footer.css */
+/* =========================
+   Footer Base
+========================= */
 
 .footer {
-  background: #141b26;
-  color: #cfd6e1;
+  background-color: var(--color-bg-card);
+  color: var(--color-text-secondary);
   padding-top: 80px;
 }
 
-/* Main layout */
+/* =========================
+   Main Layout (Desktop)
+========================= */
+
 .footer-container {
   max-width: 1300px;
   margin: 0 auto;
   padding: 0 24px 60px;
+
   display: grid;
   grid-template-columns: 1.4fr 2fr;
   gap: 80px;
 }
 
-/* Brand */
+/* =========================
+   Brand Section
+========================= */
+
 .footer-logo {
   display: flex;
   align-items: center;
@@ -31,14 +40,14 @@
 .logo-text {
   font-size: 1.2rem;
   font-weight: 600;
-  color: #ffffff;
+  color: var(--color-text-primary);
 }
 
 .footer-description {
-  max-width: 320px;
+  max-width: 340px;
   font-size: 0.9rem;
   line-height: 1.6;
-  color: #9aa4b2;
+  color: var(--color-text-secondary);
   margin-bottom: 24px;
 }
 
@@ -51,16 +60,28 @@
   width: 34px;
   height: 34px;
   border-radius: 50%;
-  background: #1f2937;
+
+  background-color: var(--color-bg-card);
+  color: var(--color-text-primary);
+
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #cfd6e1;
-  font-size: 0.9rem;
+
+  font-size: 0.85rem;
   text-decoration: none;
+  transition: background-color 0.2s ease, color 0.2s ease;
 }
 
-/* Links */
+.footer-socials a:hover {
+  background-color: var(--color-accent);
+  color: #fff;
+}
+
+/* =========================
+   Footer Links
+========================= */
+
 .footer-links {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -70,7 +91,7 @@
 .footer-column h4 {
   font-size: 0.9rem;
   font-weight: 600;
-  color: #ffffff;
+  color: var(--color-text-primary);
   margin-bottom: 18px;
 }
 
@@ -78,21 +99,32 @@
 .footer-column span {
   display: block;
   font-size: 0.85rem;
-  color: #9aa4b2;
+  color: var(--color-text-secondary);
   margin-bottom: 10px;
   text-decoration: none;
 }
 
-/* Bottom */
-.footer-bottom {
-  border-top: 1px solid #1f2937;
-  padding: 18px 24px;
-  text-align: center;
-  font-size: 0.75rem;
-  color: #7f8a9a;
+.footer-column a:hover {
+  color: var(--color-accent);
 }
 
-/* Responsive */
+/* =========================
+   Bottom Bar
+========================= */
+
+.footer-bottom {
+  border-top: 1px solid var(--color-border-default);
+  padding: 18px 24px;
+
+  text-align: center;
+  font-size: 0.75rem;
+  color: var(--color-text-secondary);
+}
+
+/* =========================
+   Responsive – Tablet
+========================= */
+
 @media (max-width: 900px) {
   .footer-container {
     grid-template-columns: 1fr;
@@ -100,6 +132,34 @@
   }
 
   .footer-links {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* =========================
+   Responsive – Mobile
+========================= */
+
+@media (max-width: 600px) {
+  .footer {
+    padding-top: 60px;
+  }
+
+  .footer-container {
+    padding-bottom: 40px;
+  }
+
+  .footer-links {
     grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .footer-description {
+    max-width: 100%;
+  }
+
+  .footer-bottom {
+    font-size: 0.7rem;
+    padding: 14px 16px;
   }
 }

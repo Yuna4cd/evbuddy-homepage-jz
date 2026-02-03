@@ -1,35 +1,47 @@
-/* components/Order.css */
-
+/* =========================
+   Section
+========================== */
 .order-section {
   padding: 140px 0;
-  background: linear-gradient(180deg, #0b1422 0%, #0e1a2a 100%);
+
+  background: linear-gradient(
+    180deg,
+    var(--color-bg-primary) 0%,
+    var(--color-bg-surface) 100%
+  );
 }
 
+/* =========================
+   Layout
+========================== */
 .order-container {
   max-width: 1300px;
   margin: 0 auto;
   padding: 0 24px;
+
   display: grid;
   grid-template-columns: 1.6fr 1fr;
   gap: 40px;
 }
 
-/* Left form */
+/* =========================
+   Left: Order Form
+========================== */
 .order-form {
-  background: #1a2230;
+  background-color: var(--color-bg-card);
   padding: 36px;
   border-radius: 14px;
 }
 
 .order-form h3 {
   font-size: 1.4rem;
-  color: #ffffff;
+  color: var(--color-text-primary);
   margin-bottom: 6px;
 }
 
 .order-subtitle {
   font-size: 0.9rem;
-  color: #9aa4b2;
+  color: var(--color-text-secondary);
   margin-bottom: 30px;
 }
 
@@ -50,18 +62,19 @@
 
 .field label {
   font-size: 0.75rem;
-  color: #cfd6e1;
+  color: var(--color-text-secondary);
   margin-bottom: 6px;
 }
 
 .field input,
 .field select,
 .field textarea {
-  background: #262f3e;
+  background-color: var(--color-bg-surface);
   border: none;
   padding: 12px;
   border-radius: 6px;
-  color: #ffffff;
+
+  color: var(--color-text-primary);
   font-size: 0.85rem;
 }
 
@@ -70,6 +83,9 @@
   resize: none;
 }
 
+/* =========================
+   Account Toggle
+========================== */
 .account-toggle {
   display: flex;
   gap: 10px;
@@ -78,65 +94,79 @@
 .account-toggle button {
   flex: 1;
   padding: 12px;
-  background: #262f3e;
+
+  background-color: var(--color-bg-surface);
   border: none;
-  color: #cfd6e1;
+  color: var(--color-text-secondary);
+
   border-radius: 6px;
   cursor: pointer;
 }
 
 .account-toggle .active {
-  background: #22d3a6;
-  color: #0b1422;
+  background-color: var(--color-success);
+  color: var(--color-bg-primary);
 }
 
+/* =========================
+   Submit Button
+========================== */
 .submit-btn {
   margin-top: 26px;
-  background: #22d3a6;
-  color: #0b1422;
+
+  background-color: var(--color-success);
+  color: var(--color-bg-primary);
+
   padding: 14px 24px;
   border: none;
   border-radius: 8px;
+
   font-weight: 600;
   cursor: pointer;
 }
 
-/* Right subscribe */
+/* =========================
+   Right: Subscribe
+========================== */
 .order-subscribe form {
-  background: #1a2230;
+  background-color: var(--color-bg-card);
   padding: 36px;
   border-radius: 14px;
+
   display: flex;
   flex-direction: column;
 }
 
 .order-subscribe h4 {
-  color: #ffffff;
+  color: var(--color-text-primary);
   font-size: 1.1rem;
   margin-bottom: 10px;
 }
 
 .order-subscribe p {
   font-size: 0.85rem;
-  color: #9aa4b2;
+  color: var(--color-text-secondary);
   margin-bottom: 24px;
 }
 
 .order-subscribe input {
-  background: #262f3e;
+  background-color: var(--color-bg-surface);
   border: none;
   padding: 12px;
   border-radius: 6px;
-  color: #ffffff;
+
+  color: var(--color-text-primary);
   margin-bottom: 14px;
 }
 
 .subscribe-btn {
-  background: #22d3a6;
-  color: #0b1422;
+  background-color: var(--color-success);
+  color: var(--color-bg-primary);
+
   padding: 14px;
   border: none;
   border-radius: 8px;
+
   font-weight: 600;
   cursor: pointer;
 }
@@ -144,10 +174,12 @@
 .subscribe-note {
   margin-top: 14px;
   font-size: 0.75rem;
-  color: #7f8a9a;
+  color: var(--color-text-secondary);
 }
 
-/* Responsive */
+/* =========================
+   Responsive
+========================== */
 @media (max-width: 1000px) {
   .order-container {
     grid-template-columns: 1fr;
