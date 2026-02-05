@@ -97,13 +97,13 @@
 .news-content h4 {
   font-size: 0.95rem;
   font-weight: 600;
-  color: black;
+  color: var(--color-text-primary);
   margin-bottom: 10px;
 }
 
 .news-content p {
   font-size: 0.85rem;
-  color: black;
+  color: var(--color-text-primary);
   line-height: 1.5;
   margin-bottom: 18px;
 }
@@ -114,8 +114,8 @@
 .news-btn {
   margin-top: auto;
 
-  background-color: var(--color-success);
-  color: var(--color-bg-primary);
+  background-color: var(--color-accent);
+  color: var(--color-text-primary);
 
   text-align: center;
   padding: 10px 0;
@@ -124,6 +124,11 @@
   font-size: 0.85rem;
   font-weight: 600;
   text-decoration: none;
+}
+
+.news-btn:hover {
+  background-color: var(--color-accent-hover);
+  color: var(--color-text-primary);
 }
 
 /* =========================
@@ -147,7 +152,12 @@
 }
 
 .news-dot.active {
-  background-color: var(--color-success);
+  background-color: var(--color-accent);
+}
+
+.news-dot.active:hover {
+  border-color: var(--color-border-default); 
+  background-color: var(--color-accent-hover);
 }
 
 /* =========================

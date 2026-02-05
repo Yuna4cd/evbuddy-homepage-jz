@@ -114,8 +114,8 @@
 .submit-btn {
   margin-top: 26px;
 
-  background-color: var(--color-success);
-  color: var(--color-bg-primary);
+  background-color: var(--color-accent);
+  color: var(--color-text-primary);
 
   padding: 14px 24px;
   border: none;
@@ -160,8 +160,8 @@
 }
 
 .subscribe-btn {
-  background-color: var(--color-success);
-  color: var(--color-bg-primary);
+  background-color: var(--color-accent);
+  color: var(--color-text-primary);
 
   padding: 14px;
   border: none;

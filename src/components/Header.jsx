@@ -1,50 +1,95 @@
-import { Link, NavLink } from 'react-router-dom';
-import { useState } from 'react';
+import { Link, NavLink, useLocation } from 'react-router-dom';
+import { useState, useEffect } from 'react';
 import './Header.css';
 import logo from '../assets/white_logo.png';
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [showEarlyAccess, setShowEarlyAccess] = useState(false);
+
+  useEffect(() => {
+    if (location.pathname === '/') {
+      const timer = setTimeout(() => {
+        setShowEarlyAccess(true);
+      }, 3000);
+
+      return () => clearTimeout(timer);
+    }
+  }, [location.pathname]);
 
   return (
-    <header className="header">
-      {/* Logo */}
-      <section className="logo">
-        <Link to="/">
-          <img src={logo} alt="EV Buddy logo" />
-        </Link>
-      </section>
+    <>
+      <header className="header">
+        {/* Logo */}
+        <section className="logo">
+          <Link to="/">
+            <img src={logo} alt="EV Buddy logo" />
+          </Link>
+        </section>
 
-      {/* Hamburger (mobile only) */}
-      <button
-        className="hamburger"
-        onClick={() => setMenuOpen(prev => !prev)}
-        aria-label="Toggle navigation"
-        aria-expanded={menuOpen}
-      >
-        <span />
-        <span />
-        <span />
-      </button>
+        {/* Hamburger */}
+        <button
+          className="hamburger"
+          onClick={() => setMenuOpen(prev => !prev)}
+          aria-label="Toggle navigation"
+          aria-expanded={menuOpen}
+        >
+          <span />
+          <span />
+          <span />
+        </button>
 
-      {/* Navigation */}
-      <section className={`navLink ${menuOpen ? 'open' : ''}`}>
-        <nav>
-          <ul onClick={() => setMenuOpen(false)}>
-            <li><NavLink to="/" end>Home</NavLink></li>
-            <li><NavLink to="/services">Services</NavLink></li>
-            <li><NavLink to="/investments">Investments</NavLink></li>
-            <li><NavLink to="/news">News</NavLink></li>
-            <li><NavLink to="/rentals">Rentals</NavLink></li>
-          </ul>
-        </nav>
-      </section>
+        {/* Navigation */}
+        <section className={`navLink ${menuOpen ? 'open' : ''}`}>
+          <nav>
+            <ul onClick={() => setMenuOpen(false)}>
+              <li><NavLink to="/" end>Home</NavLink></li>
+              <li><NavLink to="/services">Services</NavLink></li>
+              <li><NavLink to="/investments">Investments</NavLink></li>
+              <li><NavLink to="/news">News</NavLink></li>
+              <li><NavLink to="/rentals">Rentals</NavLink></li>
+            </ul>
+          </nav>
+        </section>
+        {/* Reopen Tab */}
+        <div
+          className="earlyAccessTab"
+          onClick={() => {
+            setShowEarlyAccess(true);
+          }}
+        >
+          <p>Early Access</p>
+        </div>
+      </header>
+      {/* Early Access Popup */}
+      {showEarlyAccess && (
+        <aside className="earlyAccess">
+          <button
+            className="closeBtn"
+            onClick={() => {
+              setShowEarlyAccess(false);
+              setDismissed(true);
+            }}
+            aria-label="Close"
+          >
+            ×
+          </button>
 
-      {/* User Actions */}
-      <section className="userActions">
-        <button className="loginBtn">Login</button>
-        <button className="signupBtn">Sign Up</button>
-      </section>
-    </header>
+          <h4>Get Exclusive Early Access</h4>
+          <p>
+            Want to be the first to know when we release something new?
+            Sign up for VIP updates.
+          </p>
+
+          <input
+            type="email"
+            className="emailInput"
+            placeholder="Email"
+          />
+          <button className="ctaBtn">Continue</button>
+        </aside>
+      )}
+
+    </>
   );
 }
