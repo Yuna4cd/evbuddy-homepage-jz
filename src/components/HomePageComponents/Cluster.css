@@ -3,12 +3,7 @@
 ========================== */
 .cluster-section {
   padding: 120px 0;
-
-  background: linear-gradient(
-    180deg,
-    var(--color-bg-primary) 0%,
-    var(--color-bg-surface) 100%
-  );
+  background-color: var(--color-bg-primary-dark);
 }
 
 /* =========================

@@ -19,15 +19,15 @@
   --color-text-primary: rgba(255, 255, 255, 0.87);
   --color-text-secondary: rgba(255, 255, 255, 0.6);
 
-  --color-bg-primary: #3d3d5c;
-  --color-bg-surface: #1b0e36;
-  --color-bg-surgace-2:#1a2230;
-  --color-bg-card: #1d1d1d;
+  --color-bg-primary: #0A3B3A;
+  --color-bg-primary-dark: #062E2D;
+  --color-bg-header: #062F2E;
+  --color-bg-card: #073E3C;
 
   --color-border-default: #ffffff;
 
-  --color-accent: #646cff;
-  --color-accent-hover: #2b3086;
+  --color-accent: #00C2A8;
+  --color-accent-hover: #0c7567;
 
   --color-success: #4ade80;
   --color-warning: #facc15;

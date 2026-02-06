@@ -3,14 +3,6 @@
 ========================== */
 .solution-section {
   padding: 100px 6%;
-
-  /* Keep gradient but bind to semantic background tones */
-  background: linear-gradient(
-    180deg,
-    var(--color-bg-primary) 0%,
-    var(--color-bg-surface) 100%
-  );
-
   color: var(--color-text-primary);
   text-align: center;
 }

@@ -3,12 +3,6 @@
 ========================== */
 .order-section {
   padding: 140px 0;
-
-  background: linear-gradient(
-    180deg,
-    var(--color-bg-primary) 0%,
-    var(--color-bg-surface) 100%
-  );
 }
 
 /* =========================
@@ -29,6 +23,7 @@
 ========================== */
 .order-form {
   background-color: var(--color-bg-card);
+  border: 2px solid var(--color-border-default);
   padding: 36px;
   border-radius: 14px;
 }
@@ -69,7 +64,7 @@
 .field input,
 .field select,
 .field textarea {
-  background-color: var(--color-bg-surface);
+  background-color: var(--color-bg-primary-dark);
   border: none;
   padding: 12px;
   border-radius: 6px;
@@ -125,11 +120,16 @@
   cursor: pointer;
 }
 
+.submit-btn:hover {
+  background-color: var(--color-accent-hover);
+}
+
 /* =========================
    Right: Subscribe
 ========================== */
 .order-subscribe form {
   background-color: var(--color-bg-card);
+  border: 2px solid var(--color-border-default);
   padding: 36px;
   border-radius: 14px;
 
@@ -150,7 +150,7 @@
 }
 
 .order-subscribe input {
-  background-color: var(--color-bg-surface);
+  background-color: var(--color-bg-primary-dark);
   border: none;
   padding: 12px;
   border-radius: 6px;
@@ -169,6 +169,10 @@
 
   font-weight: 600;
   cursor: pointer;
+}
+
+.subscribe-btn:hover {
+  background-color: var(--color-accent-hover);
 }
 
 .subscribe-note {

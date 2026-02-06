@@ -9,6 +9,8 @@ import Market from '../components/HomePageComponents/Market';
 import News from '../components/HomePageComponents/News'
 import Order from '../components/HomePageComponents/Order';
 
+import "./HomePage.css"
+
 export default function HomePage() {
   return (
     <div className='home'>

@@ -6,7 +6,7 @@
   height: 64px;
   padding: 0 3rem;
 
-  background-color: var(--color-bg-surface);
+  background-color: var(--color-bg-header);
   color: var(--color-text-primary);
 
   position: sticky;

@@ -3,12 +3,6 @@
 ========================== */
 .market-section {
   padding: 140px 0;
-
-  background: linear-gradient(
-    180deg,
-    var(--color-bg-primary) 0%,
-    var(--color-bg-surface) 100%
-  );
 }
 
 /* =========================
@@ -68,14 +62,14 @@
   width: 10px;
   height: 10px;
   border-radius: 3px;
-  background-color: var(--color-success);
+  background-color: var(--color-accent);  
 }
 
 /* =========================
    CTA
 ========================== */
 .market-cta {
-  background-color: var(--color-success);
+  background-color: var(--color-accent);
   color: var(--color-bg-primary);
   border: none;
 
@@ -85,6 +79,10 @@
   border-radius: 8px;
 
   cursor: pointer;
+}
+
+.market-cta:hover {
+  background-color: var(--color-accent-hover);
 }
 
 .market-cta span {
@@ -118,7 +116,7 @@
 .market-stat-value {
   font-size: 2rem;
   font-weight: 700;
-  color: var(--color-success);
+  color: var(--color-accent);
   margin-bottom: 6px;
 }
 

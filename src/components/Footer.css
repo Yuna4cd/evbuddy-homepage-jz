@@ -3,7 +3,7 @@
 ========================= */
 
 .footer {
-  background-color: var(--color-bg-card);
+  background-color: var(--color-bg-primary-dark);
   color: var(--color-text-secondary);
   padding-top: 80px;
 }

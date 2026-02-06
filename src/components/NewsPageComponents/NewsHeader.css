@@ -31,7 +31,7 @@
   border: none;
   outline: none;
 
-  background-color: var(--color-bg-card);
+  background-color: var(--color-bg-primary-dark);
   color: var(--color-text-primary);
 }
 
