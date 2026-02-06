@@ -27,7 +27,7 @@
 }
 
 /* ---------- Navigation ---------- */
-.navLink nav ul {
+.header-navlink {
   display: flex;
   align-items: center;
   gap: 2rem;
@@ -149,7 +149,6 @@
   transition: transform 0.3s ease;
 }
 
-
 @media (max-width: 768px) {
   .hamburger {
     display: flex;
@@ -171,7 +170,7 @@
     display: block;
   }
 
-  .navLink nav ul {
+  .navLink nav > ul {
     flex-direction: column;
     gap: 1rem;
     padding: 1.5rem 0;

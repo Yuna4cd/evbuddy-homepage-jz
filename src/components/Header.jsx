@@ -2,6 +2,7 @@ import { Link, NavLink, useLocation } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import './Header.css';
 import logo from '../assets/white_logo.png';
+import ServicesDropdown from "./ServicesDropdown";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -42,9 +43,9 @@ export default function Header() {
         {/* Navigation */}
         <section className={`navLink ${menuOpen ? 'open' : ''}`}>
           <nav>
-            <ul onClick={() => setMenuOpen(false)}>
-              <li><NavLink to="/" end>Home</NavLink></li>
-              <li><NavLink to="/services">Services</NavLink></li>
+            <ul className='header-navlink' onClick={() => setMenuOpen(false)}>
+              <li><NavLink to="/home">Home</NavLink></li>
+              <ServicesDropdown />
               <li><NavLink to="/investments">Investments</NavLink></li>
               <li><NavLink to="/news">News</NavLink></li>
               <li><NavLink to="/rentals">Rentals</NavLink></li>

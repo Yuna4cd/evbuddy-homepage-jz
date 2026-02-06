@@ -17,8 +17,8 @@ export default function HomePage() {
       <HowItWorks />
       <Charge />
       <VideoShowcase />
-      <Cluster />
       <PilotPlan />
+      <Cluster />
       <Market />
       <News />
       <Order />

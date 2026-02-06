@@ -1,0 +1,60 @@
+.services-dropdown {
+    position: relative;
+}
+
+.services-btn {
+    background: none;
+    border: none;
+    box-shadow: none;
+    cursor: pointer;
+    display: block;
+    padding: 0.45em 1em;
+    cursor: pointer;
+}
+
+.services-btn:hover {
+    background-color: var(--color-accent);
+}
+
+/* Dropdown menu */
+.services-dropdown > .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    display: none;
+    min-width: 10em;
+    padding: 0.25em 0;
+
+    list-style: none;
+    background-color: var(--color-bg-card);
+    border-radius: 0.25em;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+
+    z-index: 1000;
+}
+
+/* Dropdown items */
+.services-dropdown > .dropdown-menu > li {
+    padding: 0;
+}
+
+.services-dropdown > .dropdown-menu > li a {
+    display: block;
+    padding: 0.5em 0.75em;
+    text-decoration: none;
+    color: inherit;
+    white-space: nowrap;
+}
+
+/* Hover / focus styles */
+.services-dropdown > .dropdown-menu > li a:hover,
+.services-dropdown > .dropdown-menu > li a:focus {
+    background-color: var(--color-accent-hover);
+}
+
+/* Show dropdown on hover OR keyboard focus */
+.services-dropdown:hover > .dropdown-menu,
+.services-dropdown:focus-within > .dropdown-menu {
+    display: block;
+}
