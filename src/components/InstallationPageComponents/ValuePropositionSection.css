@@ -1,0 +1,57 @@
+/* ValuePropositionSection.css */
+
+.value-section {
+  padding: 96px 20px;
+}
+
+.value-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.value-title {
+  text-align: center;
+  font-size: 2.1rem;
+  font-weight: 700;
+  margin-bottom: 56px;
+}
+
+.value-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+/* Value card */
+.value-card {
+  padding: 32px;
+  border-radius: 18px;
+  border: 1px solid var(--color-border-default);
+  background-color: var(--color-bg-card);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.value-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+}
+
+.value-card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 14px;
+  color: var(--color-text-primary);
+}
+
+.value-card-description {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--color-text-secondary);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .value-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -6,6 +6,7 @@ import ServicesPage from './pages/ServicesPage'
 import InvestmentPage from './pages/InvestmentPage'
 import RentPage from './pages/RentPage'
 import NewsPage from './pages/NewsPage'
+import InstallationPage from './pages/InstallationPage'
 import './App.css'
 
 function App() {
@@ -18,7 +19,7 @@ function App() {
       <Header />
         <Routes>
           <Route path="/home" element={<HomePage />} />
-          <Route path="/services/:serviceName" element={<ServicesPage />} />
+          <Route path='/services/installation' element={<InstallationPage />} />
           <Route path="/investments" element={<InvestmentPage />} />
           <Route path="/news" element={<NewsPage />} />
           <Route path="/rentals" element={<RentPage />} />

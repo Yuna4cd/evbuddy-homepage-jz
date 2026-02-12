@@ -1,0 +1,60 @@
+.market {
+  padding: 100px 20px;
+  background: #e8f1ef;
+  text-align: center;
+}
+
+.market-title {
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: #2b8c7f;
+  margin-bottom: 70px;
+}
+
+/* FLEX CONTAINER */
+.market-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* PILL CARD */
+.market-pill {
+  background: #1f6f63;
+  color: white;
+  width: 250px;
+  height: 180px;
+  border-radius: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 14px 30px rgba(0,0,0,0.12);
+  transition: transform 0.2s ease;
+}
+
+.market-pill:hover {
+  transform: translateY(-6px);
+}
+
+/* ICON */
+.market-icon {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+}
+
+/* VALUE */
+.market-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+/* LABEL */
+.market-label {
+  font-size: 0.85rem;
+  opacity: 0.9;
+}

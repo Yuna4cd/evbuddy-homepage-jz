@@ -7,9 +7,10 @@ import ServicesDropdown from "./ServicesDropdown";
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [showEarlyAccess, setShowEarlyAccess] = useState(false);
+  const location = useLocation();
 
   useEffect(() => {
-    if (location.pathname === '/') {
+    if (location.pathname === '/home') {
       const timer = setTimeout(() => {
         setShowEarlyAccess(true);
       }, 3000);
@@ -46,9 +47,9 @@ export default function Header() {
             <ul className='header-navlink' onClick={() => setMenuOpen(false)}>
               <li><NavLink to="/home">Home</NavLink></li>
               <ServicesDropdown />
-              <li><NavLink to="/investments">Investments</NavLink></li>
+              <li><NavLink to="/investments">Invest</NavLink></li>
               <li><NavLink to="/news">News</NavLink></li>
-              <li><NavLink to="/rentals">Rentals</NavLink></li>
+              <li><NavLink to="/rentals">RentCharger</NavLink></li>
             </ul>
           </nav>
         </section>

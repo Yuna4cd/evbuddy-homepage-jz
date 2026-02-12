@@ -1,0 +1,91 @@
+.team {
+  padding: 110px 20px;
+  background: #e8f1ef;
+  text-align: center;
+}
+
+.team-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #2b8c7f;
+  margin-bottom: 80px;
+}
+
+/* GRID */
+.team-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 60px;
+}
+
+/* CARD */
+.team-card {
+  background: #1f6f63;
+  color: white;
+  padding: 60px 40px;
+  border-radius: 120px;
+  position: relative;
+  box-shadow: 0 14px 36px rgba(0,0,0,0.12);
+  transition: transform 0.2s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-6px);
+}
+
+/* AVATAR */
+.team-avatar {
+  width: 90px;
+  height: 90px;
+  margin: 0 auto 20px;
+  background: linear-gradient(135deg, #2b8c7f, #36b39a);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+/* NAME */
+.team-name {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+/* ROLE */
+.team-role {
+  font-size: 0.9rem;
+  color: #36b39a;
+  margin-bottom: 18px;
+  font-weight: 500;
+}
+
+/* DESCRIPTION */
+.team-description {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin-bottom: 14px;
+  opacity: 0.9;
+}
+
+/* EDUCATION */
+.team-education {
+  font-size: 0.8rem;
+  color: #36b39a;
+  opacity: 0.9;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1000px) {
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .team-card {
+    border-radius: 60px;
+  }
+}

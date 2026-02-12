@@ -19,15 +19,18 @@
   --color-text-primary: rgba(255, 255, 255, 0.87);
   --color-text-secondary: rgba(255, 255, 255, 0.6);
 
-  --color-bg-primary: #0A3B3A;
-  --color-bg-primary-dark: #062E2D;
-  --color-bg-header: #062F2E;
-  --color-bg-card: #073E3C;
+  /* Primary Backgrounds */
+  --color-bg-primary: #0B1F3A;        /* Main section background */
+  --color-bg-primary-dark: #08162B;   /* Darker depth layer */
+  --color-bg-header: #0A1A33;         /* Header/nav surface */
+  --color-bg-card: #10294A;           /* Card surface */
+
+  /* Accent */
+  --color-accent: #3B82F6;            /* Bright modern blue */
+  --color-accent-hover: #2563EB;      /* Deeper hover blue */
+
 
   --color-border-default: #ffffff;
-
-  --color-accent: #00C2A8;
-  --color-accent-hover: #0c7567;
 
   --color-success: #4ade80;
   --color-warning: #facc15;

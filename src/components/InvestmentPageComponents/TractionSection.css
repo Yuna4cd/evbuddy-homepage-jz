@@ -1,0 +1,99 @@
+.traction {
+  padding: 100px 20px;
+  background: #e8f1ef;
+}
+
+.traction-title {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 60px;
+  color: #2b8c7f;
+}
+
+/* OUTER VERTICAL */
+.traction-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+/* ROWS */
+.traction-row {
+  display: flex;
+  gap: 40px;
+  align-items: stretch;
+}
+
+/* IMAGES */
+.traction-image {
+  flex: 1.4;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 14px 32px rgba(0,0,0,0.15);
+}
+
+.traction-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.traction-image.wide {
+  flex: 1.8;
+}
+
+/* STACK */
+.traction-stack {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* CARD STYLE (pill shape) */
+.traction-card {
+  background: #1f6f63;
+  color: white;
+  padding: 28px 32px;
+  border-radius: 60px;
+  text-align: center;
+  box-shadow: 0 10px 28px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease;
+}
+
+.traction-card:hover {
+  transform: translateY(-4px);
+}
+
+/* ICON */
+.traction-icon {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+/* TITLE */
+.traction-card h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+/* DESCRIPTION */
+.traction-card p {
+  font-size: 0.85rem;
+  opacity: 0.85;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1000px) {
+  .traction-row {
+    flex-direction: column;
+  }
+
+  .traction-image {
+    height: 260px;
+  }
+}

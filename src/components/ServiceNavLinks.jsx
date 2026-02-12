@@ -3,10 +3,10 @@ import { NavLink } from "react-router-dom";
 
 export default function ServiceNavLinks() {
   const links = [
-    { label: "EV Charging", path: "/services/ev-charging" },
-    { label: "Fleet Management", path: "/services/fleet" },
-    { label: "Consulting", path: "/services/consulting" },
-    { label: "Maintenance", path: "/services/maintenance" },
+    { label: "EVChargeShare", path: "/services/EVChargeShare" },
+    { label: "EVNetworkApp", path: "/services/EVNetworkApp" },
+    { label: "Installation", path: "/services/installation" },
+
   ];
 
   return (

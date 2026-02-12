@@ -1,0 +1,32 @@
+.problem-solution {
+  padding: 90px 20px;
+}
+
+.ps-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.ps-card {
+  padding: 40px;
+  border-radius: 18px;
+  background: var(--color-bg-card);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+}
+
+.problem {
+  border-left: 6px solid #ef4444;
+}
+
+.solution {
+  border-left: 6px solid #10b981;
+}
+
+@media (max-width: 900px) {
+  .ps-container {
+    grid-template-columns: 1fr;
+  }
+}
