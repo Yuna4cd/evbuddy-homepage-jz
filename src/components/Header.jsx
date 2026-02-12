@@ -10,7 +10,7 @@ export default function Header() {
   const location = useLocation();
 
   useEffect(() => {
-    if (location.pathname === '/home') {
+    if (location.pathname === '/') {
       const timer = setTimeout(() => {
         setShowEarlyAccess(true);
       }, 3000);
