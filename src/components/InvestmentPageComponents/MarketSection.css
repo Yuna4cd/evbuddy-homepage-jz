@@ -1,13 +1,12 @@
 .market {
   padding: 100px 20px;
-  background: #e8f1ef;
   text-align: center;
 }
 
 .market-title {
   font-size: 2.3rem;
   font-weight: 700;
-  color: #2b8c7f;
+  color: var(--color-text-primary);
   margin-bottom: 70px;
 }
 
@@ -23,8 +22,8 @@
 
 /* PILL CARD */
 .market-pill {
-  background: #1f6f63;
-  color: white;
+  background: var(--color-bg-card);
+  color: var(--color-text-primary);
   width: 250px;
   height: 180px;
   border-radius: 100px;

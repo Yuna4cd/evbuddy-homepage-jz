@@ -1,3 +1,4 @@
 .installation {
-    background: linear-gradient(180deg, var(--color-bg-primary-dark), var(--color-bg-primary));
+    background: linear-gradient(135deg, var(--color-bg-primary), var(--color-bg-primary-dark));
+
 }

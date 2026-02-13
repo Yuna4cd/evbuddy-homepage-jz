@@ -45,7 +45,7 @@ export default function Header() {
         <section className={`navLink ${menuOpen ? 'open' : ''}`}>
           <nav>
             <ul className='header-navlink' onClick={() => setMenuOpen(false)}>
-              <li><NavLink to="/home">Home</NavLink></li>
+              <li><NavLink to="/">Home</NavLink></li>
               <ServicesDropdown />
               <li><NavLink to="/investments">Invest</NavLink></li>
               <li><NavLink to="/news">News</NavLink></li>

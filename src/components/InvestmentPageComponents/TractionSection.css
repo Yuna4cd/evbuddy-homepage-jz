@@ -1,6 +1,5 @@
 .traction {
   padding: 100px 20px;
-  background: #e8f1ef;
 }
 
 .traction-title {
@@ -8,7 +7,7 @@
   font-size: 2.2rem;
   font-weight: 700;
   margin-bottom: 60px;
-  color: #2b8c7f;
+  color: var(--color-text-primary);
 }
 
 /* OUTER VERTICAL */
@@ -55,8 +54,8 @@
 
 /* CARD STYLE (pill shape) */
 .traction-card {
-  background: #1f6f63;
-  color: white;
+  background: var(--color-bg-card);
+  color: var(--color-text-primary);
   padding: 28px 32px;
   border-radius: 60px;
   text-align: center;
