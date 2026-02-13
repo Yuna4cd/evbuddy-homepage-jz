@@ -3,6 +3,7 @@ import ProblemSolutionSection from "../components/InvestmentPageComponents/Probl
 import TractionSection from "../components/InvestmentPageComponents/TractionSection";
 import MarketSection from "../components/InvestmentPageComponents/MarketSection";
 import TeamSection from "../components/InvestmentPageComponents/TeamSection";
+import ComparisonSection from "../components/InvestmentPageComponents/ComparisonSection.jsx";
 
 export default function InvestmentPage() {
   return (
@@ -11,6 +12,7 @@ export default function InvestmentPage() {
       <ProblemSolutionSection />
       <TractionSection />
       <MarketSection />
+      <ComparisonSection />
       <TeamSection />
     </main>
   );
