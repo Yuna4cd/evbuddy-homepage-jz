@@ -1,0 +1,116 @@
+.network-page {
+  font-family: "Inter", sans-serif;
+  background: var(--color-bg-primary-dark);
+}
+
+/* HERO */
+.hero-section {
+  text-align: center;
+  padding: 80px 20px;
+  background: var(--color-bg-primary);
+  color: var(--color-text-primary);
+}
+
+.hero-section h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.hero-section span {
+  color: var(--color-accent);
+}
+
+.hero-section p {
+  max-width: 600px;
+  margin: 0 auto 30px;
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+.cta-btn {
+  background: var(--color-accent);
+  color: var(--color-text-primary);
+  padding: 12px 28px;
+  border: none;
+  border-radius: 30px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.cta-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* COVER FLOW */
+.coverflow-container {
+    display: flex;
+    padding-top: 3rem;
+    gap: 40px;
+    list-style: none;
+    white-space: nowrap;
+    /* overflow: scroll; */
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+
+    padding-inline: calc(50vw - 250px);
+}
+
+.coverflow-container li {
+    display: inline-block;
+    scroll-snap-align: center;
+    width: 500px;
+    aspect-ratio: 1;
+    animation: linear adjust-z-index both;
+	animation-timeline: --li-in-and-out-of-view;
+
+    view-timeline-name: --li-in-and-out-of-view;
+	view-timeline-axis: inline;
+
+}
+
+.coverflow-container li img {
+    margin: 2rem 2rem;
+    width: auto;
+    height: 100%;
+    animation: linear rotate-cover both;
+	animation-timeline: --li-in-and-out-of-view;
+    -webkit-box-reflect: below 0.5em linear-gradient(rgb(0 0 0 / 0), rgb(0 0 0 / 0.25));
+}
+
+
+
+
+@keyframes rotate-cover {
+	0% {
+		transform: translateX(-100%) rotateY(-45deg);
+	}
+	35% {
+		transform: translateX(0) rotateY(-45deg);
+	}
+	50% {
+		transform: rotateY(0deg) translateZ(1em) scale(1.2);
+	}
+	65% {
+		transform: translateX(0) rotateY(45deg);
+	}
+	100% {
+		transform: translateX(100%) rotateY(45deg);
+	}
+}
+
+@keyframes adjust-z-index {
+	0% {
+		z-index: 1;
+	}
+	50% {
+		z-index: 100;
+	}
+	100% {
+		z-index: 1;
+	}
+}

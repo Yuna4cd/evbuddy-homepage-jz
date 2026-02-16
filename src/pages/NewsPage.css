@@ -3,6 +3,6 @@
   background: linear-gradient(
     180deg,
     var(--color-bg-primary),
-    var(--color-bg-surface)
+    var(--color-bg-primary-dark)
   );
 }

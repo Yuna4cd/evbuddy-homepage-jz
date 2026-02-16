@@ -41,7 +41,7 @@
 
 .news-search button {
   background-color: var(--color-accent);
-  color: var(--color-bg-primary);
+  color: var(--color-text-primary);
 
   border: none;
   padding: 14px 24px;

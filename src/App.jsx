@@ -7,6 +7,7 @@ import InvestmentPage from './pages/InvestmentPage'
 import RentPage from './pages/RentPage'
 import NewsPage from './pages/NewsPage'
 import InstallationPage from './pages/InstallationPage'
+import NetworkAppPage from './pages/NetworkAppPage'
 import './App.css'
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
       <Header />
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path='/services/EVNetworkApp' element={<NetworkAppPage />} />
           <Route path='/services/installation' element={<InstallationPage />} />
           <Route path="/investments" element={<InvestmentPage />} />
           <Route path="/news" element={<NewsPage />} />
