@@ -2,12 +2,12 @@ import { Routes, Route, useLocation } from 'react-router-dom'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import HomePage from './pages/HomePage'
-import ServicesPage from './pages/ServicesPage'
 import InvestmentPage from './pages/InvestmentPage'
 import RentPage from './pages/RentPage'
 import NewsPage from './pages/NewsPage'
 import InstallationPage from './pages/InstallationPage'
 import NetworkAppPage from './pages/NetworkAppPage'
+import ChargeSharePage from './pages/ChargeSharePage'
 import './App.css'
 
 function App() {
@@ -22,6 +22,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path='/services/EVNetworkApp' element={<NetworkAppPage />} />
           <Route path='/services/installation' element={<InstallationPage />} />
+          <Route path='/services/EVChargeShare' element={<ChargeSharePage />} />
           <Route path="/investments" element={<InvestmentPage />} />
           <Route path="/news" element={<NewsPage />} />
           <Route path="/rentals" element={<RentPage />} />

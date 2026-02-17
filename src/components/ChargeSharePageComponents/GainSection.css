@@ -1,0 +1,36 @@
+.gain-section {
+  position: relative;
+  text-align: center;
+  padding: 120px 20px;
+}
+
+.orbit-container {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  margin: 60px auto;
+  animation: rotate 20s linear infinite;
+}
+
+.orbit-item {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  background: #00ffcc;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.orbit-0 { top: 0; left: 50%; transform: translate(-50%, 0); }
+.orbit-1 { top: 25%; right: 0; }
+.orbit-2 { bottom: 25%; right: 0; }
+.orbit-3 { bottom: 0; left: 50%; transform: translate(-50%, 0); }
+.orbit-4 { bottom: 25%; left: 0; }
+.orbit-5 { top: 25%; left: 0; }
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
