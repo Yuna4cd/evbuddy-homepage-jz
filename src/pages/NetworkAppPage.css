@@ -47,9 +47,9 @@
 .coverflow-container {
     display: flex;
     padding-top: 3rem;
-    gap: 40px;
+    gap: 30px;
     list-style: none;
-    white-space: nowrap;
+    flex-wrap: nowrap;
     /* overflow: scroll; */
     overflow-x: auto;
     overflow-y: hidden;
@@ -63,26 +63,36 @@
 .coverflow-container li {
     display: inline-block;
     scroll-snap-align: center;
-    width: 500px;
+    /* width: 500px; */
+    flex: 0 0 600px;
     aspect-ratio: 1;
     animation: linear adjust-z-index both;
-	animation-timeline: --li-in-and-out-of-view;
+	  animation-timeline: --li-in-and-out-of-view;
 
     view-timeline-name: --li-in-and-out-of-view;
-	view-timeline-axis: inline;
+	  view-timeline-axis: inline;
 
 }
 
 .coverflow-container li img {
-    margin: 2rem 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    max-height: 80%;
     width: auto;
-    height: 100%;
+    height: auto;
+    object-fit: contain;
+
     animation: linear rotate-cover both;
-	animation-timeline: --li-in-and-out-of-view;
+	  animation-timeline: --li-in-and-out-of-view;
     -webkit-box-reflect: below 0.5em linear-gradient(rgb(0 0 0 / 0), rgb(0 0 0 / 0.25));
 }
 
-
+.coverflow-container li p {
+    /* white-space: wrap; */
+    max-width: 80%;
+    margin: 0 auto;
+    line-height: 1.6;
+}
 
 
 @keyframes rotate-cover {
