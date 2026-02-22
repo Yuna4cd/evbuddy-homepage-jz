@@ -1,72 +1,95 @@
 
 export default function RentSections() {
+    const RENT_CARDS = [
+        {
+            title: "Start Earning Instantly",
+            subtitle:
+            "Hosts can turn their charger into an immediate source of income.",
+            cards: [
+                {
+                    title: "1. Create a Profile",
+                    description:
+                    "Create a listing profile and verify your charger information.",
+                },
+                {
+                    title: "2. Set It Up",
+                    description:
+                    "Set your schedule, pricing, hours & access.",
+                },
+                {
+                    title: "3. Start Earning",
+                    description:
+                    "Accept requests and start earning from your bookings.",
+                },
+            ],
+        },
+        {
+            title: "Start Charging Instantly",
+            subtitle:
+            "Drivers can use chargers with just 3 simple steps.",
+            cards: [
+                {
+                    title: "1. Find & Filter",
+                    description:
+                    "Search nearby chargers with filters.",
+                },
+                {
+                    title: "2. Book",
+                    description:
+                    "Book a charger session at an available station.",
+                },
+                {
+                    title: "3. Charge",
+                    description:
+                    "Plug in, start charging, and continue your journey.",
+                },
+            ],
+        },
+        {
+            title: "Why choose us?",
+            subtitle: "Take Advantages from Us",
+            cards: [
+                {
+                    title: "Faster",
+                    description:
+                    "Drive, charge, and go without long wait times.",
+                },
+                {
+                    title: "Stable",
+                    description:
+                    "Instant bookings with upfront pricing & access.",
+                },
+                {
+                    title: "Flexible",
+                    description:
+                    "Community-powered charging, anytime.",
+                },
+            ],
+        },
+    ];
+
     return (
         <div>
-            {/* Host Section */}
-            <section className="rent-section">
-                <h2>Start Earning Instantly</h2>
-                <p className="section-subtitle">
-                Hosts can turn their charger into an immediate source of income.
-                </p>
-
-                <div className="rent-steps">
-                <div className="rent-card">
-                    <h3>1. Create a Profile</h3>
-                    <p>Create a listing profile and verify your charger information.</p>
-                </div>
-                <div className="rent-card">
-                    <h3>2. Set It Up</h3>
-                    <p>Set your schedule, pricing, hours & access.</p>
-                </div>
-                <div className="rent-card">
-                    <h3>3. Start Earning</h3>
-                    <p>Accept requests and start earning from your bookings.</p>
-                </div>
-                </div>
-            </section>
-
-            {/* Driver Section */}
-            <section className="rent-section">
-                <h2>Start Charging Instantly</h2>
-                <p className="section-subtitle">
-                Drivers can use chargers with just 3 simple steps.
-                </p>
-
-                <div className="rent-steps">
-                <div className="rent-card">
-                    <h3>1. Find & Filter</h3>
-                    <p>Search nearby chargers with filters.</p>
-                </div>
-                <div className="rent-card">
-                    <h3>2. Book</h3>
-                    <p>Book a charger session at an available station.</p>
-                </div>
-                <div className="rent-card">
-                    <h3>3. Charge</h3>
-                    <p>Plug in, start charging, and continue your journey.</p>
-                </div>
-                </div>
-            </section>
-
-            {/* Why Choose Us */}
-            <section className="rent-section">
-                <h2>Why choose us?</h2>
-
-                <div className="rent-steps">
-                <div className="rent-card">
-                    <h3>Faster</h3>
-                    <p>Drive, charge, and go without long wait times.</p>
-                </div>
-                <div className="rent-card">
-                    <h3>Stable</h3>
-                    <p>Instant bookings with upfront pricing & access.</p>
-                </div>
-                <div className="rent-card">
-                    <h3>Flexible</h3>
-                    <p>Community-powered charging, anytime.</p>
-                </div>
-                </div>
-            </section>
+            <ul id="rent-cards">
+                {RENT_CARDS.map((card, cardIndex) => (
+                    <li className="rent-card" key={cardIndex} style={{"--index":cardIndex}}>
+                        <div className="card-content">
+                            <div className="content-header">
+                                <h2>{card.title}</h2>
+                                <p>{card.subtitle}</p>
+                            </div>
+                            <div className="info-container">
+                                {card.cards.map((info, inforIndex) => (
+                                    <div className="content-info" key={inforIndex}>
+                                        <h3>{info.title}</h3>
+                                        <p>{info.description}</p>
+                                    </div>
+                                ))}
+                            </div>  
+                        </div>
+                    </li>
+                ))}
+            </ul>
         </div>
     )
 }

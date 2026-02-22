@@ -149,7 +149,7 @@
   transition: transform 0.3s ease;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 945px) {
   .hamburger {
     display: flex;
   }

@@ -20,6 +20,9 @@
   --color-text-secondary: rgba(255, 255, 255, 0.6);
 
   /* Primary Backgrounds */
+  --color-bg-radial: 
+    radial-gradient(circle at 50% -10%, rgba(59,130,246,0.25), transparent 40%),
+    linear-gradient(180deg, #0e294d 0%, #08162B 100%);
   --color-bg-surface: #0c1f3d;
   --color-bg-primary: #0e294d;        /* Main section background */
   --color-bg-primary-dark: #08162B;   /* Darker depth layer */
