@@ -23,9 +23,9 @@
 .solution-cards {
   display: flex;
   gap: 40px;
-  justify-content: center;
-  align-items: stretch;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 /* =========================

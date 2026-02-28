@@ -2,8 +2,8 @@
   /* =========================
      Typography & Base
   ========================== */
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', sans-serif;
+  line-height: 1.6;
   font-weight: 400;
 
   font-synthesis: none;
@@ -20,19 +20,24 @@
   --color-text-secondary: rgba(255, 255, 255, 0.6);
 
   /* Primary Backgrounds */
-  --color-bg-radial: 
-    radial-gradient(circle at 50% -10%, rgba(59,130,246,0.25), transparent 40%),
-    linear-gradient(180deg, #0e294d 0%, #08162B 100%);
-  --color-bg-surface: #0c1f3d;
-  --color-bg-primary: #0e294d;        /* Main section background */
-  --color-bg-primary-dark: #08162B;   /* Darker depth layer */
-  --color-bg-header: #0A1A33;         /* Header/nav surface */
-  --color-bg-card: #10294A;           /* Card surface */
+  --color-bg-radial: white;
+  --color-bg-surface: grey;
+  --color-bg-primary: #002d2d;        /* bg-primary */
+  --color-bg-primary-dark: #001a1a;   /* bg-dark */
+  --color-bg-header: #0A1A33;         /* unchanged */
+  --color-bg-card: #003d3d;           /* bg-secondary */
+
+  --teal: #00c9a7;
+  --teal-light: #00e6be;
+  --teal-dark: #009b82;
+  --text-white: #ffffff;
+  --text-gray: #a0b0b0;
+  --text-dark: #002d2d;
 
   /* Accent */
-  --color-accent: #3B82F6;            /* Bright modern blue */
-  --color-accent-dark: #0a2757;
-  --color-accent-hover: #1f52c2;      /* Deeper hover blue */
+  --color-accent: #00c9a7;            /* teal */
+  --color-accent-dark: #009b82;       /* teal-dark */
+  --color-accent-hover: #00e6be;      /* teal-light */
 
 
   --color-border-default: #ffffff;

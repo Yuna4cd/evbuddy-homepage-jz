@@ -6,22 +6,22 @@ export default function VideoShowcase() {
     {
       title: 'Ford Mustang Mach-E',
       desc: 'Experience fast V2V DC charging with the Ford Mustang Mach-E.',
-      thumbnail: '/videos/mach-e.jpg',
+      youtubeId: 'FftTmlqWY8E',
     },
     {
       title: 'Rivian R1S',
       desc: 'See how the Rivian R1S leverages our V2V charging technology.',
-      thumbnail: '/videos/rivian.jpg',
+      youtubeId: 'k6jN05bGd-M',
     },
     {
       title: 'BrightDrop Van',
       desc: 'Commercial fleet charging made simple with BrightDrop.',
-      thumbnail: '/videos/brightdrop.jpg',
+      youtubeId: '5yVLIUprufU',
     },
     {
       title: 'BMW EV',
       desc: 'Premium charging experience for BMW electric vehicles.',
-      thumbnail: '/videos/bmw.jpg',
+      youtubeId: 'yDnGEg9jE9E',
     },
   ];
 
@@ -35,17 +35,19 @@ export default function VideoShowcase() {
         </p>
 
         <div className="video-carousel">
-          <button className="carousel-btn left">‹</button>
-
           <div className="video-track">
             {videos.map((video, index) => (
               <div className="video-card" key={index}>
-                <div
-                  className="video-thumb"
-                  style={{ backgroundImage: `url(${video.thumbnail})` }}
-                >
-                  <div className="play-btn">▶</div>
+                <div className="video-embed">
+                  <iframe
+                    src={`https://www.youtube-nocookie.com/embed/${video.youtubeId}`}
+                    title={video.title}
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowFullScreen
+                  ></iframe>
                 </div>
+
                 <div className="video-info">
                   <h4>{video.title}</h4>
                   <p>{video.desc}</p>
@@ -54,7 +56,6 @@ export default function VideoShowcase() {
             ))}
           </div>
 
-          <button className="carousel-btn right">›</button>
         </div>
       </div>
     </section>

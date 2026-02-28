@@ -4,7 +4,7 @@
 .rent-page {
   min-height: 100vh;
 
-  background: var(--color-bg-radial);
+  background: var(--color-bg-primary);
   color: var(--color-text-primary);
   padding: 6rem 1.5rem 8rem;
 }
@@ -50,13 +50,13 @@
   transition: all 0.25s ease;
 
   box-shadow:
-    0 8px 20px rgba(59,130,246,0.3);
+    0 8px 20px rgba(8, 16, 29, 0.3);
 }
 
 .primary-btn:hover {
   transform: translateY(-3px);
   box-shadow:
-    0 12px 30px rgba(59,130,246,0.4);
+    0 12px 30px rgba(13, 25, 44, 0.4);
 }
 
 
@@ -136,11 +136,7 @@
   position: relative;
   overflow: hidden;
 
-  background: linear-gradient(
-    145deg,
-    rgba(16, 41, 74, 0.9),
-    rgba(8, 22, 43, 0.95)
-  );
+  background: var(--color-bg-card);
 
   backdrop-filter: blur(12px);
 

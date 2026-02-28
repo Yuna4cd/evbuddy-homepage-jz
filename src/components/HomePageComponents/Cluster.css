@@ -107,6 +107,10 @@
   .cluster-image-wrapper {
     margin-top: 60px;
   }
+
+  .cluster-image-wrapper {
+    display: none;
+  }
 }
 
 @media (max-width: 600px) {
