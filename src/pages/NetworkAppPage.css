@@ -94,22 +94,22 @@
     line-height: 1.6;
 }
 
-
+/* option rotation for mobile app images: rotateY(-45deg) */
 @keyframes rotate-cover {
 	0% {
-		transform: translateX(-100%) rotateY(-45deg);
+		transform: translateX(-100%);
 	}
 	35% {
-		transform: translateX(0) rotateY(-45deg);
+		transform: translateX(0);
 	}
 	50% {
-		transform: rotateY(0deg) translateZ(1em) scale(1.2);
+		transform: translateZ(1em) scale(1.2);
 	}
 	65% {
-		transform: translateX(0) rotateY(45deg);
+		transform: translateX(0);
 	}
 	100% {
-		transform: translateX(100%) rotateY(45deg);
+		transform: translateX(100%);
 	}
 }
 

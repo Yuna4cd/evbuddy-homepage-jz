@@ -24,7 +24,7 @@ export default function Header() {
       <header className="header">
         {/* Logo */}
         <section className="logo">
-          <Link to="/home">
+          <Link to="/">
             <img src={logo} alt="EV Buddy logo" />
           </Link>
         </section>

@@ -105,8 +105,8 @@
 ========================== */
 
 #rent-cards {
-	--numcards: 3;
-	view-timeline-name: --cards-element-scrolls-in-body;
+	/* --numcards: 3; */
+	/* view-timeline-name: --cards-element-scrolls-in-body; */
   list-style-type: none;
   display: flex;
   flex-direction: column;
@@ -116,21 +116,21 @@
 }
 
 .rent-card {
-  position: sticky;
-  top: 80px;
+  /* position: sticky;
+  top: 80px; */
   margin-bottom: 2rem;
 
-  --index0: calc(var(--index));
-	--reverse-index: calc(var(--numcards) - var(--index0));
+  /* --index0: calc(var(--index));
+	--reverse-index: calc(var(--numcards) - var(--index0)); */
 
 }
 
-@keyframes scale {
+/* @keyframes scale {
 	to {
 		transform:
 			scale(calc(1.1 - calc(0.1 * var(--reverse-index))));
 	}
-}
+} */
 
 .card-content {
   position: relative;
@@ -149,12 +149,12 @@
     0 20px 60px rgba(0,0,0,0.35),
     0 0 0 1px rgba(59,130,246,0.05);
 
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* transition: transform 0.3s ease, box-shadow 0.3s ease;
 
   animation: linear scale forwards;
   animation-timeline: --cards-element-scrolls-in-body;
-  animation-range: exit-crossing 0% exit-crossing 100%;
-
+  animation-range: exit-crossing 0% exit-crossing 100%; */
+/* 
   .card-content::before {
     content: "";
     position: absolute;
@@ -170,7 +170,7 @@
     );
 
     border-radius: 4px;
-  }
+  } */
 }
 
 .card-content:hover {

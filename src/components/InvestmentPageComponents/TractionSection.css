@@ -93,6 +93,6 @@
   }
 
   .traction-image {
-    height: 260px;
+    display: none;
   }
 }
